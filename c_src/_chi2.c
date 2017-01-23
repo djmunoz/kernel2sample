@@ -15,7 +15,7 @@ static char chi2_docstring[] =
 
 static PyObject *chi2_chi2(PyObject *self, PyObject *args);
 
-static PyMethodDef module_methods[] = {
+Static PyMethodDef module_methods[] = {
     {"chi2", chi2_chi2, METH_VARARGS, chi2_docstring},
     {NULL, NULL, 0, NULL}
 };

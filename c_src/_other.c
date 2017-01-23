@@ -13,17 +13,17 @@ static char chi2_docstring[] =
 
 
 
-static PyObject *chi2_chi2(PyObject *self, PyObject *args);
+static PyObject *chi2_other(PyObject *self, PyObject *args);
 
 static PyMethodDef module_methods[] = {
-    {"chi2", chi2_chi2, METH_VARARGS, chi2_docstring},
+    {"chi2", chi2_other, METH_VARARGS, chi2_docstring},
     {NULL, NULL, 0, NULL}
 };
 
 
-PyMODINIT_FUNC init_chi2(void)
+PyMODINIT_FUNC init_other(void)
 {
-    PyObject *m = Py_InitModule3("_chi2", module_methods, module_docstring);
+    PyObject *m = Py_InitModule3("_other", module_methods, module_docstring);
     if (m == NULL)
         return;
 
@@ -32,7 +32,7 @@ PyMODINIT_FUNC init_chi2(void)
 }
 
 
-static PyObject *chi2_chi2(PyObject *self, PyObject *args)
+static PyObject *chi2_other(PyObject *self, PyObject *args)
 {
     double m, b;
     PyObject *x_obj, *y_obj, *yerr_obj;
