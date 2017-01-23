@@ -1,0 +1,12 @@
+/*
+ *Kernel 2-sample test (Grotton et al 2012)
+
+ *C-extension
+
+ */
+
+
+#include <Python.h>
+#include <numpy/arrayobject.h>
+#include <math.h>
+
